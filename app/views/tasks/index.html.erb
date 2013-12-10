@@ -3,9 +3,9 @@
 <h2>Todo
 (<%= pluralize(@todo.count, "Task") %>, <%= pluralize(@todo.sum("duration"), "Hour") %>)</h2>
 
-<%= render partial: "table", locals: {tasks: @todo} %>
+<%= render partial: "table", locals: {tasks: @todo, css_class: "todo"} %>
 <h2>Done</h2>
-<%= render partial: "table", locals: {tasks: @done} %>
+<%= render partial: "table", locals: {tasks: @done, css_class:"done"} %>
 
 
 <br>
